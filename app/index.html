@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework1</title>
+    <script defer src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/4852a5178e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .pickNeighbor{
+            transform: translateY(-10px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <header>
+            <a href="https://www.daangn.com/kr/"><img src="../static/carrot.png" alt="carrot"></a>
+            <input type="button" value="앱 다운로드" id="downLoad">
+        </header>
+        <main>
+            <div></div>
+            <div id="main2">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <b><span id="ekdrms">당근</span></b>에서&nbsp;<span id="categoryText">???</span>&nbsp;찾고 계신가요?
+                </div>
+                <div id="search-container">
+                    <div id="search-category">
+                        <span >중고거래</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <input type="text" placeholder="검색어를 입력해주세요." id="search-input">
+                    <button id="search-btn">→</button>
+                </div>
+            </div>
+            <div id="selectCategoryAll">
+                <div id="selectCategory1">
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <div>중고거래</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div>알바/과외</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-house"></i>
+                        <div>부동산</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-car"></i>
+                        <div>중고차</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-store"></i>
+                        <div>동네업체</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <div>동네생활</div>
+                    </div>
+                    <div class="selectCategory" onclick="clickInsert(this);">
+                        <i class="fa-solid fa-people-group"></i>
+                        <div>모임</div>
+                    </div>
+                </div>
+                <div id="neighborhood">
+                    <div>송도동</div>
+                    <div>역삼동</div>
+                    <div>물금읍</div>
+                    <div>봉담읍</div>
+                    <div>배방읍</div>
+                    <div>서초동</div>
+                    <div>옥정동</div>
+                    <div>신림동</div>
+                    <div>불당동</div>
+                    <div>향남음</div>
+                    <div>청담동</div>
+                    <div>다산동</div>
+                    <div>별내동</div>
+                    <div>화도읍</div>
+                    <div>다사읍</div>
+                    <div>마곡동</div>
+                    <div>압구정동</div>
+                    <div>배곧동</div>
+                    <div>고덕동</div>
+                    <div>오창읍</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="../static/carrot.png" alt="carrot" id="carrot2">
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

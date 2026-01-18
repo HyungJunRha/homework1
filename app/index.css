@@ -1,0 +1,229 @@
+body{
+    margin : 0;
+    background-color: black     ;
+    display: flex;
+    justify-content: center;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+#wrapper{
+    width: 90vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    & > a > img{
+        height: 50px;
+    }
+
+    & > input {
+        height: 30px;
+        width: 100px;
+        background-color: #f60;
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+        border: none;
+    }
+
+    & > input:hover {
+        cursor: pointer;
+        background-color: rgb(247, 169, 141);
+    }
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 2fr 2.5fr;
+
+}
+#main2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & > div:nth-child(1){
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        font-weight: 1000;
+        font-size: 2.5em;
+        color: white;
+    }
+}
+
+#search-container{
+    display: flex;
+    width: 60%;
+    height: 45%;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 0 auto;
+
+    & > #search-category{
+        color: white;
+        padding-right: 10px;
+        border-right: 1px solid #333;
+    }
+
+    & > #search-input{
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px 15px;
+    }
+
+    & > #search-btn {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+}
+
+#categoryText{
+    color: forestgreen;
+}
+
+#selectCategoryAll{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+
+    row-gap: 30px;
+}
+#selectCategory1{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(7,110px);
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.selectCategory{
+    width: 110px;
+    height: 100px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr;
+    place-items: start;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+
+    & > i {
+        font-size: 1.2em;
+    }
+
+
+}
+.selectCategory:hover{
+    cursor: pointer;
+    background-color: #929090;
+}
+.selectCategory.pickNeighbor{
+    background-color: #929090;
+}
+
+#neighborhood {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 5px;
+    margin: 0 auto;
+    justify-content: start;
+
+    & > div{
+    height: 40px;
+    width: fit-content;
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    
+    }
+
+    & > div:hover{
+        cursor: pointer;
+        background-color: #929090;
+    }
+
+    & > div.pick{
+        color: #f60;
+        font-weight: 700;
+        font-size: 1.2em;
+        border: 1px solid #f60;
+        transform: translateY(-5px);
+    }
+
+    & > div.pick:hover {
+        background-color: rgb(252, 184, 138);
+    }
+
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & > div:nth-child(2) > i {
+        font-size: 1.5em;
+        color: white;
+    }
+    gap: 15px;
+}
+
+#carrot2{
+    height: 30px;
+    width: 60px;
+}
+
+#ekdrms {
+    color: #f60;
+}
+
+.selectCategory, #neighborhood > div {
+    transition: 0.3s;
+}
