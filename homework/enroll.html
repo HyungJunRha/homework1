@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <script defer src="./enroll.js"></script>
+    <script defer src="./layout.js"></script>
+    <link rel="stylesheet" href="./enroll.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>친구들의 우정 현황</h1> 
+            <h3>이런놈이 여길 가다니 !</h3>
+        </header>
+        <main>
+            <div id="insert">
+                <input type="text" name="name" placeholder="이름">
+                <br>
+                <input type="text" name="company" placeholder="회사이름">
+                <select name="status">
+                    <option value="none" selected>홈프로텍터</option>
+                    <option value="contracted">계약직</option>
+                    <option value="full-time">정규직</option>
+                    <option value="part-time">알바생</option>
+                </select>
+                <br>
+                <input type="number" name="salary" placeholder="0000만원">
+                <br>
+                <input type="submit" value="제출" onclick="insert();">
+            </div>
+            <div id="data"></div>
+        </main>
+
+        <aside>
+            <b><div>------- MENU -------</div></b>
+            <div class="selectMenu" onclick="location.href='./index.html'">HOME</div>
+            <div class="selectMenu" onclick="location.href='./rank.html'">누가누가 잘갔나 ?</div>
+        </aside>
+    </div>
+</body>
+</html>
